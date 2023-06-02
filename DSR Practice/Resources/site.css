@@ -1,0 +1,79 @@
+/* Include in css file first line Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+/***************/
+
+/* Include in body Google font */
+body {
+font-family: 'Barlow Condensed', sans-serif;
+}
+/********************/
+
+/* Own css styles */
+/* Lesson 4 */
+
+.imageThumbnail {
+    height: 150px;
+    max-width: 150px;
+}
+
+.cardBoxShadow {
+    -webkit-box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.75);
+}
+
+.cardHeaderStyle {
+    background: rgba(0,96,120,1);
+    background: -moz-linear-gradient(left, rgba(0,96,120,1) 0%, rgba(165,182,194,1) 50%, rgba(176,185,212,1) 51%, rgba(40,67,247,1) 71%, rgba(0,51,255,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,96,120,1)), color-stop(50%, rgba(165,182,194,1)), color-stop(51%, rgba(176,185,212,1)), color-stop(71%, rgba(40,67,247,1)), color-stop(100%, rgba(0,51,255,1)));
+    background: -webkit-linear-gradient(left, rgba(0,96,120,1) 0%, rgba(165,182,194,1) 50%, rgba(176,185,212,1) 51%, rgba(40,67,247,1) 71%, rgba(0,51,255,1) 100%);
+    background: -o-linear-gradient(left, rgba(0,96,120,1) 0%, rgba(165,182,194,1) 50%, rgba(176,185,212,1) 51%, rgba(40,67,247,1) 71%, rgba(0,51,255,1) 100%);
+    background: -ms-linear-gradient(left, rgba(0,96,120,1) 0%, rgba(165,182,194,1) 50%, rgba(176,185,212,1) 51%, rgba(40,67,247,1) 71%, rgba(0,51,255,1) 100%);
+    background: linear-gradient(to right, rgba(0,96,120,1) 0%, rgba(165,182,194,1) 50%, rgba(176,185,212,1) 51%, rgba(40,67,247,1) 71%, rgba(0,51,255,1) 100%);
+    border-radius: 45px 0 0 0 !important;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card {
+    border-radius: 45px 0 45px 0;
+}
+
+.buttonShadow {
+    -webkit-box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.75);
+}
+
+.card {
+    border-radius: 45px 0 45px 0;
+}
+
+.card-body {
+    border-radius: 0 0 45px 0;
+}
+
+.buttonShadow {
+    -webkit-box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.75);
+}
+
+.menuBg {
+    background: rgba(19,6,120,1);
+    background: -moz-linear-gradient(left, rgba(19,6,120,1) 0%, rgba(23,8,158,1) 31%, rgba(36,12,245,1) 51%, rgba(94,76,255,1) 71%, rgba(156,145,255,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(19,6,120,1)), color-stop(31%, rgba(23,8,158,1)), color-stop(51%, rgba(36,12,245,1)), color-stop(71%, rgba(94,76,255,1)), color-stop(100%, rgba(156,145,255,1)));
+    background: -webkit-linear-gradient(left, rgba(19,6,120,1) 0%, rgba(23,8,158,1) 31%, rgba(36,12,245,1) 51%, rgba(94,76,255,1) 71%, rgba(156,145,255,1) 100%);
+    background: -o-linear-gradient(left, rgba(19,6,120,1) 0%, rgba(23,8,158,1) 31%, rgba(36,12,245,1) 51%, rgba(94,76,255,1) 71%, rgba(156,145,255,1) 100%);
+    background: -ms-linear-gradient(left, rgba(19,6,120,1) 0%, rgba(23,8,158,1) 31%, rgba(36,12,245,1) 51%, rgba(94,76,255,1) 71%, rgba(156,145,255,1) 100%);
+    background: linear-gradient(to right, rgba(19,6,120,1) 0%, rgba(23,8,158,1) 31%, rgba(36,12,245,1) 51%, rgba(94,76,255,1) 71%, rgba(156,145,255,1) 100%);
+    color: #fff;
+}
+
+.containerBordered {
+    border-right: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+}
+
+/******************/

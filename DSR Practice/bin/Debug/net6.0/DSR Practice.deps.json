@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "DSR Practice/1.0.0": {
+        "dependencies": {
+          "DSRPractice.Models": "1.0.0",
+          "DSRPractice.Services": "1.0.0"
+        },
+        "runtime": {
+          "DSR Practice.dll": {}
+        }
+      },
+      "DSRPractice.Models/1.0.0": {
+        "runtime": {
+          "DSRPractice.Models.dll": {}
+        }
+      },
+      "DSRPractice.Services/1.0.0": {
+        "dependencies": {
+          "DSRPractice.Models": "1.0.0"
+        },
+        "runtime": {
+          "DSRPractice.Services.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DSR Practice/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DSRPractice.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DSRPractice.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

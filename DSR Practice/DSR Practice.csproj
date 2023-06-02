@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>DSR_Practice</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DSRPractice.Models\DSRPractice.Models.csproj" />
+    <ProjectReference Include="..\DSRPractice.Services\DSRPractice.Services.csproj" />
+  </ItemGroup>
+
+</Project>

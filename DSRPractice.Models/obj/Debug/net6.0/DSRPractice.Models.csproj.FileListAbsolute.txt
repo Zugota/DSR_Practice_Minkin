@@ -1,0 +1,12 @@
+C:\Users\Иван\source\repos\DSR Practice\DSRPractice.Models\bin\Debug\net6.0\DSRPractice.Models.deps.json
+C:\Users\Иван\source\repos\DSR Practice\DSRPractice.Models\bin\Debug\net6.0\DSRPractice.Models.dll
+C:\Users\Иван\source\repos\DSR Practice\DSRPractice.Models\bin\Debug\net6.0\DSRPractice.Models.pdb
+C:\Users\Иван\source\repos\DSR Practice\DSRPractice.Models\obj\Debug\net6.0\DSRPractice.Models.csproj.AssemblyReference.cache
+C:\Users\Иван\source\repos\DSR Practice\DSRPractice.Models\obj\Debug\net6.0\DSRPractice.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Иван\source\repos\DSR Practice\DSRPractice.Models\obj\Debug\net6.0\DSRPractice.Models.AssemblyInfoInputs.cache
+C:\Users\Иван\source\repos\DSR Practice\DSRPractice.Models\obj\Debug\net6.0\DSRPractice.Models.AssemblyInfo.cs
+C:\Users\Иван\source\repos\DSR Practice\DSRPractice.Models\obj\Debug\net6.0\DSRPractice.Models.csproj.CoreCompileInputs.cache
+C:\Users\Иван\source\repos\DSR Practice\DSRPractice.Models\obj\Debug\net6.0\DSRPractice.Models.dll
+C:\Users\Иван\source\repos\DSR Practice\DSRPractice.Models\obj\Debug\net6.0\refint\DSRPractice.Models.dll
+C:\Users\Иван\source\repos\DSR Practice\DSRPractice.Models\obj\Debug\net6.0\DSRPractice.Models.pdb
+C:\Users\Иван\source\repos\DSR Practice\DSRPractice.Models\obj\Debug\net6.0\ref\DSRPractice.Models.dll
