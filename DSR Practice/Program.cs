@@ -5,6 +5,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
+builder.Services.Configure<RouteOptions>(options =>
+{
+    options.LowercaseUrls = true;
+    options.LowercaseQueryStrings = true;
+    options.AppendTrailingSlash = true;
+});
 
 var app = builder.Build();
 

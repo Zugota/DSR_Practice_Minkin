@@ -5,9 +5,9 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSR Practice", "DSR Practice\DSR Practice.csproj", "{B9EA0182-3C7B-4BE9-A428-46F997292777}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSRPractice.Models", "DSRPractice.Models\DSRPractice.Models.csproj", "{6CEE7F9A-536E-4CAE-B5C5-CC2C23C4038B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRPractice.Models", "DSRPractice.Models\DSRPractice.Models.csproj", "{6CEE7F9A-536E-4CAE-B5C5-CC2C23C4038B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSRPractice.Services", "DSRPractice.Services\DSRPractice.Services.csproj", "{9257406A-44D2-41B4-9F62-972403FD49B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRPractice.Services", "DSRPractice.Services\DSRPractice.Services.csproj", "{9257406A-44D2-41B4-9F62-972403FD49B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

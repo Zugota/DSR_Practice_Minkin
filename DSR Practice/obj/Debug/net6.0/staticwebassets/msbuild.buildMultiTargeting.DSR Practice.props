@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DSR Practice.props" />
+</Project>

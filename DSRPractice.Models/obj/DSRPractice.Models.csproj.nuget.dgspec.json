@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Иван\\source\\repos\\DSR Practice\\DSRPractice.Models\\DSRPractice.Models.csproj": {}
+    "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Иван\\source\\repos\\DSR Practice\\DSRPractice.Models\\DSRPractice.Models.csproj": {
+    "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Иван\\source\\repos\\DSR Practice\\DSRPractice.Models\\DSRPractice.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj",
         "projectName": "DSRPractice.Models",
-        "projectPath": "C:\\Users\\Иван\\source\\repos\\DSR Practice\\DSRPractice.Models\\DSRPractice.Models.csproj",
+        "projectPath": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj",
         "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Иван\\source\\repos\\DSR Practice\\DSRPractice.Models\\obj\\",
+        "outputPath": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",

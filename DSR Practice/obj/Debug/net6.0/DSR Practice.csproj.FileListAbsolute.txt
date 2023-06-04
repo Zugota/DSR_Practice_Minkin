@@ -29,3 +29,70 @@ C:\Users\Иван\source\repos\DSR Practice\DSR Practice\bin\Debug\net6.0\DSRPra
 C:\Users\Иван\source\repos\DSR Practice\DSR Practice\bin\Debug\net6.0\DSRPractice.Models.pdb
 C:\Users\Иван\source\repos\DSR Practice\DSR Practice\bin\Debug\net6.0\DSRPractice.Services.pdb
 C:\Users\Иван\source\repos\DSR Practice\DSR Practice\obj\Debug\net6.0\DSR Practice.csproj.CopyComplete
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\appsettings.json
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSR Practice.staticwebassets.runtime.json
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSR Practice.exe
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSR Practice.deps.json
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSR Practice.runtimeconfig.json
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSR Practice.dll
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSR Practice.pdb
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSRPractice.Models.dll
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSRPractice.Services.dll
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSRPractice.Models.pdb
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSRPractice.Services.pdb
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.csproj.AssemblyReference.cache
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.AssemblyInfoInputs.cache
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.AssemblyInfo.cs
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.csproj.CoreCompileInputs.cache
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.RazorAssemblyInfo.cache
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.RazorAssemblyInfo.cs
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\staticwebassets\msbuild.DSR Practice.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\staticwebassets\msbuild.build.DSR Practice.props
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.DSR Practice.props
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.DSR Practice.props
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\scopedcss\bundle\DSR Practice.styles.css
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\scopedcss\projectbundle\DSR Practice.bundle.scp.css
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.csproj.CopyComplete
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.dll
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\refint\DSR Practice.dll
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.pdb
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.genruntimeconfig.cache
+C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\ref\DSR Practice.dll
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\appsettings.json
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSR Practice.staticwebassets.runtime.json
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSR Practice.exe
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSR Practice.deps.json
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSR Practice.runtimeconfig.json
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSR Practice.dll
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSR Practice.pdb
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSRPractice.Models.dll
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSRPractice.Services.dll
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSRPractice.Models.pdb
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\bin\Debug\net6.0\DSRPractice.Services.pdb
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.csproj.AssemblyReference.cache
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.AssemblyInfoInputs.cache
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.AssemblyInfo.cs
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.csproj.CoreCompileInputs.cache
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.RazorAssemblyInfo.cache
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.RazorAssemblyInfo.cs
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\scopedcss\bundle\DSR Practice.styles.css
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\scopedcss\projectbundle\DSR Practice.bundle.scp.css
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.csproj.CopyComplete
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.dll
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\refint\DSR Practice.dll
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.pdb
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\DSR Practice.genruntimeconfig.cache
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\obj\Debug\net6.0\ref\DSR Practice.dll
