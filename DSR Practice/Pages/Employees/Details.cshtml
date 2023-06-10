@@ -4,7 +4,11 @@
     ViewData["Title"] = "Details of Employees";
     var photoPath = $"{Model.Employee.PhotoPath ?? "/images/noimage.png"}";
 }
-
+@if (TempData["SuccessMessage"] != null) {
+    <div class="alert alert-success text-center">
+        @TempData["SuccessMessage"]
+    </div>
+}
 <h1>Details</h1>
 <div class="row justify-content-center m-3">
     <div class="col col-lg-8">

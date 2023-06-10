@@ -30,3 +30,43 @@
 		</div>
 	}
 </div>
+
+<table class="table">
+
+		<thead>
+			<tr>
+				<th>Имя</th>
+				<th>E-mail</th>
+				<th>Департамент</th>
+
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var i in Model.Employees)
+			{
+				<tr>
+					<td>@i.Name</td>
+					<td>@i.Email</td>
+					<td>@i.Department</td>
+				</tr>
+			}
+		</tbody>
+
+</table>
+
+
+<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$('.table tr').hover(function () {
+			$(this).addClass('hover');
+		}, function () {
+			$(this).removeClass('hover');
+		});
+
+		$('.table tr').click(function () {
+			$('.table tr').removeClass('active');
+			$(this).addClass('active');
+		});
+	});
+</script>
