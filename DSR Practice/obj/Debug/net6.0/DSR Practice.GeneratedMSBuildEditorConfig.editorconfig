@@ -5,52 +5,61 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DSR_Practice
 build_property.RootNamespace = DSR_Practice
-build_property.ProjectDir = C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice\
+build_property.ProjectDir = C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSR Practice
+build_property.MSBuildProjectDirectory = C:\Users\Ванёчек\Desktop\DSR_Practice_Minkin-main\DSR Practice
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Иван/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/Employees/Details.cshtml]
+[C:/Users/Ванёчек/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/Employees/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ванёчек/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/Employees/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/Employees/Editor.cshtml]
+[C:/Users/Ванёчек/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/Employees/Editor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEVkaXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/Employees/Employees.cshtml]
+[C:/Users/Ванёчек/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/Employees/Employees.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEVtcGxveWVlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/Error.cshtml]
+[C:/Users/Ванёчек/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/Index.cshtml]
+[C:/Users/Ванёчек/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/Privacy.cshtml]
+[C:/Users/Ванёчек/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Ванёчек/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/Shared/_DisplayEmployeePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9EaXNwbGF5RW1wbG95ZWVQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ванёчек/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/_ViewImports.cshtml]
+[C:/Users/Ванёчек/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/_ViewStart.cshtml]
+[C:/Users/Ванёчек/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/Shared/_Layout.cshtml]
+[C:/Users/Ванёчек/Desktop/DSR_Practice_Minkin-main/DSR Practice/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-9z37v61m88

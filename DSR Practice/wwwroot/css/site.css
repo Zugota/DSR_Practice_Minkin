@@ -231,12 +231,14 @@ td {
 
 .table .hover td:first-child:after {
     border-left: 3px solid #ffe5c5;
+    border-radius: 0 0 0 10px;
     /*border-radius: 0 0 0 10px;*/
 }
 
 .table .hover td:last-child:after {
     border-right: 3px solid #ffe5c5;
     width: auto;
+    border-radius: 0 0 10px 0;
     /*border-radius: 0 0 10px 0;*/
 }
 

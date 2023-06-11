@@ -30,7 +30,24 @@ namespace DSRPractice.Services
             };
 		}
 
-		public IEnumerable<Employee> GetAllEmployees()
+        public Employee Add(Employee newEmployee)
+        {
+            newEmployee.Id = _employeeList.Max(x => x.Id) + 1;
+			_employeeList.Add(newEmployee);
+			return newEmployee;
+        }
+
+        public Employee Delete(int id)
+        {
+			Employee empDelete = _employeeList.FirstOrDefault(x => x.Id == id);
+			if (empDelete != null)
+			{
+				_employeeList.Remove(empDelete);
+			}
+			return empDelete;
+        }
+
+        public IEnumerable<Employee> GetAllEmployees()
 		{
 			return _employeeList;
 		}
@@ -55,3 +72,4 @@ namespace DSRPractice.Services
         }
 	}
 }
+	

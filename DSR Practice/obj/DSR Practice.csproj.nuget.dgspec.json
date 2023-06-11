@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSR Practice\\DSR Practice.csproj": {}
+    "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSR Practice\\DSR Practice.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSR Practice\\DSR Practice.csproj": {
+    "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSR Practice\\DSR Practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSR Practice\\DSR Practice.csproj",
+        "projectUniqueName": "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSR Practice\\DSR Practice.csproj",
         "projectName": "DSR Practice",
-        "projectPath": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSR Practice\\DSR Practice.csproj",
-        "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSR Practice\\obj\\",
+        "projectPath": "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSR Practice\\DSR Practice.csproj",
+        "packagesPath": "C:\\Users\\Ванёчек\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSR Practice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ванёчек\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj": {
-                "projectPath": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj"
+              "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj": {
+                "projectPath": "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj"
               },
-              "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Services\\DSRPractice.Services.csproj": {
-                "projectPath": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Services\\DSRPractice.Services.csproj"
+              "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Services\\DSRPractice.Services.csproj": {
+                "projectPath": "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Services\\DSRPractice.Services.csproj"
               }
             }
           }
@@ -46,6 +46,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -65,21 +71,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj": {
+    "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj",
         "projectName": "DSRPractice.Models",
-        "projectPath": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj",
-        "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\obj\\",
+        "projectPath": "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj",
+        "packagesPath": "C:\\Users\\Ванёчек\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ванёчек\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,6 +110,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -120,21 +132,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Services\\DSRPractice.Services.csproj": {
+    "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Services\\DSRPractice.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Services\\DSRPractice.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Services\\DSRPractice.Services.csproj",
         "projectName": "DSRPractice.Services",
-        "projectPath": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Services\\DSRPractice.Services.csproj",
-        "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Services\\obj\\",
+        "projectPath": "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Services\\DSRPractice.Services.csproj",
+        "packagesPath": "C:\\Users\\Ванёчек\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ванёчек\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -148,8 +160,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj": {
-                "projectPath": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj"
+              "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj": {
+                "projectPath": "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj"
               }
             }
           }
@@ -163,6 +175,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -179,7 +197,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
