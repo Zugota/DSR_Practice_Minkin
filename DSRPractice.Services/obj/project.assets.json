@@ -134,19 +134,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ванёчек\\.nuget\\packages\\": {}
+    "C:\\Users\\Иван\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Services\\DSRPractice.Services.csproj",
+      "projectUniqueName": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Services\\DSRPractice.Services.csproj",
       "projectName": "DSRPractice.Services",
-      "projectPath": "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Services\\DSRPractice.Services.csproj",
-      "packagesPath": "C:\\Users\\Ванёчек\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Services\\obj\\",
+      "projectPath": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Services\\DSRPractice.Services.csproj",
+      "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ванёчек\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -160,8 +160,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj": {
-              "projectPath": "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj"
+            "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj": {
+              "projectPath": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSRPractice.Models\\DSRPractice.Models.csproj"
             }
           }
         }
@@ -197,7 +197,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

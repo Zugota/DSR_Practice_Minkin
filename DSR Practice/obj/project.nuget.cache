@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "sMXxDFUmSblRaumoukqRGO7tlo3eQertNRyLyZKVd3Ajni9W0AvYgRySHEEomw2ccyDj/7vcbds2DHAwyZv2tw==",
+  "dgSpecHash": "JpFtAOAZyybgZZwsQVAYI3iTvbKRA5j8dmP1gTSBftRa3/dt2b+pxB87D7EaJATfliFrH/TOiLrOA5+Px07JTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ванёчек\\Desktop\\DSR_Practice_Minkin-main\\DSR Practice\\DSR Practice.csproj",
+  "projectFilePath": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Minkin-main\\DSR Practice\\DSR Practice.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Ванёчек\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "C:\\Users\\Иван\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

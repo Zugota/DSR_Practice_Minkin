@@ -8,6 +8,12 @@
 <h1>Employees</h1>
 <h3>@Model.Employees.Count()</h3>
 
+<div class="row justify-content-center m-3">
+	<div class="col-12 col-sm-6 col-lg-4">
+		@await Component.InvokeAsync("HeadCount")
+	</div>
+</div>
+
 <div class="row">
 	@foreach(var i in Model.Employees) {
 

@@ -47,7 +47,24 @@ namespace DSRPractice.Services
 			return empDelete;
         }
 
-        public IEnumerable<Employee> GetAllEmployees()
+		public IEnumerable<DeptHeadCount> empCountInDept(Dept? dept)
+		{
+			IEnumerable<Employee> query = _employeeList;
+
+			if (dept.HasValue)
+			{
+				query = query.Where(x => x.Department == dept.Value);
+			}
+
+			return query.GroupBy(x => x.Department).Select(x =>
+											new DeptHeadCount()
+											{
+												Department = x.Key.Value,
+												Count = x.Count()
+											}).ToList();
+		}
+
+		public IEnumerable<Employee> GetAllEmployees()
 		{
 			return _employeeList;
 		}

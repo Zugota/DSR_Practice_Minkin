@@ -18,5 +18,7 @@ namespace DSRPractice.Services
         Employee Add(Employee newEmployee);
 
 		Employee Delete(int id);
+
+		IEnumerable<DeptHeadCount> empCountInDept(Dept? dept);
     }
 }

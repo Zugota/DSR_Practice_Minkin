@@ -9,6 +9,15 @@
         @TempData["SuccessMessage"]
     </div>
 }
+
+<div class="row justify-content-center m-3">
+	<div class="col-12 col-sm-6 col-lg-4">
+        @await Component.InvokeAsync("HeadCount", new { department = Model.Employee.Department })
+        @*<vc:head-count department="@Model.Employee.Department"></vc:head-count>*@
+	</div>
+</div>
+
+
 <h1>Details</h1>
 <div class="row justify-content-center m-3">
     <div class="col col-lg-8">
