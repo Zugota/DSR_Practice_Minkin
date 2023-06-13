@@ -21,17 +21,21 @@ namespace DSR_Practice.Pages.Employees
 
         public string all;
 
+        [BindProperty(SupportsGet = true)]
+        public string SearchTerm { get; set; }
+
         public void OnGet()
         {
             Employees = _db.GetAllEmployees();
-            var list = Employees.ToList();
+            /*var list = Employees.ToList();
             StringBuilder sb = new StringBuilder();
             foreach (var i in list)
             {
                 sb.Append(i.Name).Append(" ");
             }
-            all = sb.ToString();
+            all = sb.ToString();*/
 
+            Employees = _db.Search(SearchTerm);
 
         }
 

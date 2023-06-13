@@ -9,7 +9,9 @@ namespace DSRPractice.Services
 {
 	public interface IEmployeeRepository
 	{
-		IEnumerable<Employee> GetAllEmployees();
+        IEnumerable<Employee> Search(string term);
+
+        IEnumerable<Employee> GetAllEmployees();
 
 		Employee GetEmployee(int id);
 

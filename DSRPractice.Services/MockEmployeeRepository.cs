@@ -74,6 +74,18 @@ namespace DSRPractice.Services
 			return _employeeList.FirstOrDefault(x => x.Id == id);
 		}
 
+		public IEnumerable<Employee> Search(string term)
+		{
+			if(string.IsNullOrWhiteSpace(term))
+			{
+				return _employeeList;
+			}
+			else
+			{
+				return _employeeList.Where(x => x.Name.ToLower().Contains(term.ToLower()) || x.Email.Contains(term.ToLower()));
+			}
+		}
+
 		public Employee Update(Employee updatedEmployee)
 		{
 			Employee employee = _employeeList.FirstOrDefault(x => x.Id == updatedEmployee.Id);
@@ -89,4 +101,3 @@ namespace DSRPractice.Services
         }
 	}
 }
-	

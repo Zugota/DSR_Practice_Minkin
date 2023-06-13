@@ -11,12 +11,16 @@ namespace DSRPractice.Models
 	{
 		public int Id { get; set; }
 		[Required]
+		[MaxLength(50)]
 		public string Name { get; set; }
 		[Required]
 		[RegularExpression("^([a-zA-Z0-9_\\-\\.]+)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([a-zA-Z0-9\\-]+\\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\\]?)$", ErrorMessage = "Please, check E-mail")]
-		public string Email { get; set; }
-		public string? PhotoPath { get; set; }
-		public Dept? Department { get; set; }
+        [MaxLength(50)]
+        public string Email { get; set; }
+        [MaxLength(50)]
+        public string? PhotoPath { get; set; }
+
+        public Dept? Department { get; set; }
 		
 	}
 }

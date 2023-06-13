@@ -1,0 +1,10 @@
+CREATE PROCEDURE SPGetEmpByID
+@ID int
+AS
+Begin
+	SELECT * FROM Employees WHERE Id = @ID;
+End
+
+SELECT * FROM Employees
+
+EXECUTE SPGetEmpByID 2

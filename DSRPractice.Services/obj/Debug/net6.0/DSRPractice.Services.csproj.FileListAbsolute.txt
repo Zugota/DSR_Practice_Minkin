@@ -43,3 +43,5 @@ C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSRPractice.Services\obj\Debu
 C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSRPractice.Services\obj\Debug\net6.0\refint\DSRPractice.Services.dll
 C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSRPractice.Services\obj\Debug\net6.0\DSRPractice.Services.pdb
 C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSRPractice.Services\obj\Debug\net6.0\ref\DSRPractice.Services.dll
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSRPractice.Services\bin\Debug\net6.0\DSRPractice.Services.runtimeconfig.json
+C:\Users\Иван\Desktop\DSR_Practice_Minkin-main\DSRPractice.Services\obj\Debug\net6.0\DSRPractice.Services.genruntimeconfig.cache

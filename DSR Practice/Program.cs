@@ -1,10 +1,16 @@
 using DSRPractice.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContextPool<AppDBContext>(options => {
+    options.UseSqlServer(builder.Configuration.GetConnectionString("EmployeeDBConnection"));    
+});
+
 builder.Services.AddRazorPages();
-builder.Services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
+/*builder.Services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();*/
+builder.Services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
 builder.Services.Configure<RouteOptions>(options =>
 {
     options.LowercaseUrls = true;
@@ -33,4 +39,3 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
-
