@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using DSR_Practice_Debts.Models;
+using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,17 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
                     options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
                 });
 builder.Services.AddControllersWithViews();
+
+// Подключение авторизации
+builder.Services.AddAuthorization(opts => {
+
+    opts.AddPolicy("OnlyForAdmin", policy => {
+        policy.RequireClaim(ClaimTypes.Role, "Admin");
+    });
+    /*opts.AddPolicy("OnlyForUser", policy => {
+        policy.RequireClaim(ClaimTypes.Role, "Пользователь");
+    });*/
+});
 
 var app = builder.Build();
 
@@ -41,3 +53,4 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+

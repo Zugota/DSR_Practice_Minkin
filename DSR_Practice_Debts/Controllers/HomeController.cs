@@ -35,6 +35,7 @@ namespace DSR_Practice_Debts.Controllers
             return View();
         }
 
+        [Authorize(Policy = "OnlyForAdmin")]
         public IActionResult Privacy()
         {
             return View();

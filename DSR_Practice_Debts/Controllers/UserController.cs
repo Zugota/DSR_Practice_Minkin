@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using DSR_Practice_Debts.Models;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using Microsoft.AspNetCore.Authorization;
+using System.ComponentModel.DataAnnotations;
 
 namespace DSR_Practice_Debts.Controllers
 {
@@ -39,6 +41,9 @@ namespace DSR_Practice_Debts.Controllers
             return View(user);
         }
 
+
+
+        [Authorize]
         public async Task<IActionResult> ShowDebtsList()
         {
             string email = User.Identity.Name;
@@ -52,12 +57,23 @@ namespace DSR_Practice_Debts.Controllers
             int id = Convert.ToInt32(_idUs);*/
 
             var debts = await _usersContext.Debts.FirstOrDefaultAsync(x => x.userId == id);
+            if (debts == null)
+            {
+                return NotFound();
+            }
 
+            
+            //АПДЕЙТ СТАТУСА
             var sqldebts = _usersContext.Debts
-                .FromSqlRaw<Debt>("SELECT * FROM Debts WHERE userId = {0}", id)
+                .FromSqlRaw<Debt>("UPDATE Debts SET Status = 'Просрочен' WHERE CAST(Debts.DateOfEnd AS datetime2) < CAST(GETDATE() AS smalldatetime);" +
+                " SELECT * FROM Debts WHERE userId = {0}", id)
                 .ToList();
 
+
+
             int sum = sqldebts.Sum(x => x.Summ);
+
+            
 
             //var debts = await _usersContext.Debts.FindAsync("userId", id);
 
@@ -109,6 +125,38 @@ namespace DSR_Practice_Debts.Controllers
             return RedirectToAction(nameof(Index));
 
         }
+
+        /*[HttpGet]
+        public IActionResult UpdateDebtsList()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateDebtsList(Debt debt)
+        {
+            string email = User.Identity.Name;
+
+            var FindidUs = await _usersContext.Users
+                .FirstOrDefaultAsync(x => x.Email == email);
+
+            int id = FindidUs.Id;
+
+
+            //debt.userId = id;
+
+
+            if ((DateTime.Now - debt.Date).TotalDays < 0)
+            {
+                debt.Status = "Просрочен";
+            }
+
+            _usersContext.Debts.Update(debt);
+            await _usersContext.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+
+        }*/
 
         [HttpGet]
         public async void ShowSumm(Debt debt)

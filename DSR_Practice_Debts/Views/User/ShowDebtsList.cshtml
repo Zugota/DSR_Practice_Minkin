@@ -14,9 +14,19 @@
 
 @{
 	int summ = Model.Sum(x => x.Summ);
+	int count = Model.Count();
 }
 
-<h1>Сумма займов: @summ</h1>
+@{
+	var modLastWeek = Model.Where(x => (DateTime.Now - x.Date).TotalDays < 7);
+	var summLastWeek = modLastWeek.Sum(x => x.Summ);
+}
+
+
+<h1>Количество займов: @count</h1>
+<h1>Общая сумма займов: @summ</h1>
+<h1>Сумма займов, которую необходимо отдать на этой неделе: @summLastWeek</h1>
+
 
 <table class="table">
 
@@ -25,25 +35,40 @@
 				<th>Id</th>
 				<th>Сумма</th>
 				<th>Дата взятия займа</th>
-
+				<th>Дата погашения займа</th>
+				<th>Статус займа</th>
 			</tr>
 		</thead>
 		<tbody>
 			@foreach (var item in Model)
 			{
-				if ((DateTime.Now - item.Date).TotalDays < 7.0)
+			if ((item.DateOfEnd - DateTime.Now).TotalDays < 0)
 				{
 					<tr>
 						<td class="bg-danger">@item.IdDebt</td>
 						<td class="bg-danger">@item.Summ рублей</td>
 						<td class="bg-danger">@item.Date</td>
+						<td class="bg-danger">@item.DateOfEnd</td>
+						<td class="bg-danger">@item.Status</td>
 					</tr>
 				}
-				else {
+				else if ((item.DateOfEnd - DateTime.Now).TotalDays < 7 && (item.DateOfEnd - DateTime.Now).TotalDays >= 0)
+				{
 					<tr>
 						<td class="bg-warning">@item.IdDebt</td>
 						<td class="bg-warning">@item.Summ рублей</td>
 						<td class="bg-warning">@item.Date</td>
+						<td class="bg-warning">@item.DateOfEnd</td>
+						<td class="bg-warning">@item.Status</td>
+					</tr>
+				}
+				else {
+					<tr>
+						<td>@item.IdDebt</td>
+						<td>@item.Summ рублей</td>
+						<td>@item.Date</td>
+						<td>@item.DateOfEnd</td>
+						<td>@item.Status</td>
 					</tr>
 				}
 			}

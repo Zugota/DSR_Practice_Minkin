@@ -10,7 +10,7 @@ namespace DSR_Practice_Debts.Models
         public int Summ { get; set; }
         public DateTime Date { get; set; }
 
-        public DateTime? DateOfEnd { get; set; }
+        public DateTime DateOfEnd { get; set; }
 
         public string? Status { get; set; }
 

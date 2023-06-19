@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<Debts>
+  <Debt>
+    <IdDebt>1</IdDebt>
+    <Summ>777</Summ>
+    <Date>2023-06-19T12:00:00+03:00</Date>
+    <DateOfEnd>2023-06-21T11:11:00+03:00</DateOfEnd>
+    <Status>Открыт</Status>
+    <userId>2</userId>
+  </Debt>
+  <Debt>
+    <IdDebt>2</IdDebt>
+    <Summ>3700</Summ>
+    <Date>2023-05-12T12:00:00+03:00</Date>
+    <DateOfEnd>2023-06-12T12:00:00+03:00</DateOfEnd>
+    <Status>Просрочен</Status>
+    <userId>2</userId>
+  </Debt>
+</Debts>

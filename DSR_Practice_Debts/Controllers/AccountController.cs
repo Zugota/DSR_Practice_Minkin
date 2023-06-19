@@ -30,7 +30,7 @@ namespace DSR_Practice_Debts.Controllers
                 
                 if (user != null)
                 {
-                    await Authenticate(model.Email); // аутентификация
+                    await Authenticate(user); // аутентификация
                     if (user.Email == "admin" && user.Password == "admin")
                     {
                         return RedirectToAction("Index", "Admin");
@@ -61,7 +61,7 @@ namespace DSR_Practice_Debts.Controllers
                     db.Users.Add(new User { Email = model.Email, Password = model.Password });
                     await db.SaveChangesAsync();
 
-                    await Authenticate(model.Email); // аутентификация
+                    await Authenticate(user); // аутентификация
 
                     return RedirectToAction("Index", "Home");
                 }
@@ -71,13 +71,22 @@ namespace DSR_Practice_Debts.Controllers
             return View(model);
         }
 
-        private async Task Authenticate(string userName)
+        private async Task Authenticate(User user)
         {
             // создаем один claim
-            var claims = new List<Claim>
+            /*var claims = new List<Claim>
             {
+
                 new Claim(ClaimsIdentity.DefaultNameClaimType, userName)
             };
+*/
+            
+                var claims = new List<Claim> {
+                new Claim(ClaimTypes.Name, user.Email),
+                new Claim(ClaimTypes.Role, user.Email == "admin" ? "Admin" : "User"),
+                new Claim("Id" , user.Id.ToString())
+                };
+           
             // создаем объект ClaimsIdentity
             ClaimsIdentity id = new ClaimsIdentity(claims, "ApplicationCookie", ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
             // установка аутентификационных куки
