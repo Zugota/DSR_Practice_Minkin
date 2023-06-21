@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DSR_Practice_Debts.Models
@@ -17,6 +18,8 @@ namespace DSR_Practice_Debts.Models
         public int userId { get; set; }
 
         public User? User { get; set; }
+         
+        public DateTime? RealDateEnd { get; set; }
         
     }
 }

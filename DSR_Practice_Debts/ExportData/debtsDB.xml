@@ -5,15 +5,43 @@
     <Summ>777</Summ>
     <Date>2023-06-19T12:00:00+03:00</Date>
     <DateOfEnd>2023-06-21T11:11:00+03:00</DateOfEnd>
-    <Status>Открыт</Status>
+    <Status>Погашен</Status>
     <userId>2</userId>
+    <RealDateEnd>2023-06-21T11:10:55.7911693+03:00</RealDateEnd>
   </Debt>
   <Debt>
     <IdDebt>2</IdDebt>
     <Summ>3700</Summ>
     <Date>2023-05-12T12:00:00+03:00</Date>
     <DateOfEnd>2023-06-12T12:00:00+03:00</DateOfEnd>
-    <Status>Просрочен</Status>
+    <Status>Погашен с опозданием на 8 дней</Status>
     <userId>2</userId>
+    <RealDateEnd>2023-06-21T11:11:09.7610881+03:00</RealDateEnd>
+  </Debt>
+  <Debt>
+    <IdDebt>7</IdDebt>
+    <Summ>900</Summ>
+    <Date>2023-06-20T11:11:00+03:00</Date>
+    <DateOfEnd>2023-07-23T04:03:00+03:00</DateOfEnd>
+    <Status>Погашен</Status>
+    <userId>2</userId>
+  </Debt>
+  <Debt>
+    <IdDebt>8</IdDebt>
+    <Summ>45</Summ>
+    <Date>2023-05-19T03:02:00+03:00</Date>
+    <DateOfEnd>2023-06-19T04:04:00+03:00</DateOfEnd>
+    <Status>Погашен с опозданием на 2 дней</Status>
+    <userId>2</userId>
+    <RealDateEnd>2023-06-21T11:45:24.2710172+03:00</RealDateEnd>
+  </Debt>
+  <Debt>
+    <IdDebt>9</IdDebt>
+    <Summ>987</Summ>
+    <Date>2023-05-21T11:11:00+03:00</Date>
+    <DateOfEnd>2025-06-25T11:11:00+03:00</DateOfEnd>
+    <Status>Прощён</Status>
+    <userId>2</userId>
+    <RealDateEnd>2023-06-21T12:15:52.5647247+03:00</RealDateEnd>
   </Debt>
 </Debts>

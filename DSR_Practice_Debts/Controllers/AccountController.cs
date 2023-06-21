@@ -61,7 +61,8 @@ namespace DSR_Practice_Debts.Controllers
                     db.Users.Add(new User { Email = model.Email, Password = model.Password });
                     await db.SaveChangesAsync();
 
-                    await Authenticate(user); // аутентификация
+                    User newUser = await db.Users.FirstOrDefaultAsync(u => u.Email == model.Email);
+                    await Authenticate(newUser); // аутентификация
 
                     return RedirectToAction("Index", "Home");
                 }

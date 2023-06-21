@@ -65,7 +65,7 @@ namespace DSR_Practice_Debts.Controllers
             
             //АПДЕЙТ СТАТУСА
             var sqldebts = _usersContext.Debts
-                .FromSqlRaw<Debt>("UPDATE Debts SET Status = 'Просрочен' WHERE CAST(Debts.DateOfEnd AS datetime2) < CAST(GETDATE() AS smalldatetime);" +
+                .FromSqlRaw<Debt>("UPDATE Debts SET Status = 'Просрочен' WHERE CAST(Debts.DateOfEnd AS datetime2) < CAST(GETDATE() AS smalldatetime) AND Debts.Status NOT LIKE '%Погашен%';" +
                 " SELECT * FROM Debts WHERE userId = {0}", id)
                 .ToList();
 
@@ -116,7 +116,9 @@ namespace DSR_Practice_Debts.Controllers
 
             
             debt.userId = id;
+
             debt.Status = "Открыт";
+            
 
 
             _usersContext.Debts.Add(debt);
@@ -159,11 +161,87 @@ namespace DSR_Practice_Debts.Controllers
         }*/
 
         [HttpGet]
-        public async void ShowSumm(Debt debt)
+        public async Task<IActionResult> DebtDetails(int id)
         {
-            int summ = 0;
-            //for (int i = 0; i < )
+            Debt debt = await _usersContext.Debts.FirstOrDefaultAsync(x => x.IdDebt == id);
+            return View(debt);
+        }
 
+        /*[HttpGet]
+        public async Task<IActionResult> PayDebt(int id)
+        {
+            Debt debt = await _usersContext.Debts.FirstOrDefaultAsync(x => x.IdDebt == id);
+            return View(debt);
+        }
+*/
+        /*[HttpPost]
+        public async Task<IActionResult> DebtDetails(Debt debt)
+        {
+            //var debt = await _usersContext.Debts.FirstOrDefaultAsync(x => x.IdDebt == id);
+
+            if (debt.DateOfEnd < DateTime.Now)
+            {
+                int totalDays = (int)(DateTime.Now - debt.DateOfEnd).TotalDays;
+                debt.Status = $"Погашен с опозданием на {totalDays} дней";
+                debt.RealDateEnd = DateTime.Now;
+            }
+            else
+            {
+                debt.Status = "Погашен";
+                debt.RealDateEnd = DateTime.Now;
+            }
+            //debt.Status = "Погашен";
+            _usersContext.Update(debt);
+            await _usersContext.SaveChangesAsync();
+
+
+            return RedirectToAction(nameof(Index));
+        }*/
+
+        [HttpGet]
+        public async Task<IActionResult> PayDebt(int id)
+        {
+            Debt debt = await _usersContext.Debts.FirstOrDefaultAsync(x => x.IdDebt == id);
+            return View(debt);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> PayDebt(Debt debt)
+        {
+            if (debt.DateOfEnd < DateTime.Now)
+            {
+                int totalDays = (int)(DateTime.Now - debt.DateOfEnd).TotalDays;
+                debt.Status = $"Погашен с опозданием на {totalDays} дней";
+                debt.RealDateEnd = DateTime.Now;
+            }
+            else
+            {
+                debt.Status = "Погашен";
+                debt.RealDateEnd = DateTime.Now;
+            }
+            //debt.Status = "Погашен";
+            _usersContext.Update(debt);
+            await _usersContext.SaveChangesAsync();
+            return RedirectToAction("ShowDebtsList");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DelayDebt(Debt debt)
+        {
+            debt.Status = "Отложен";
+            _usersContext.Update(debt);
+            await _usersContext.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ForgiveDebt(Debt debt)
+        {
+            debt.Status = "Прощён";
+            debt.RealDateEnd = DateTime.Now;
+            _usersContext.Update(debt);
+            await _usersContext.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
         public async Task<IActionResult> UserC()
@@ -174,7 +252,6 @@ namespace DSR_Practice_Debts.Controllers
             var user = await _usersContext.Users.FirstOrDefaultAsync(m => m.Email == User.Identity.Name);
 
             
-           
             return View(user);
         }
     }

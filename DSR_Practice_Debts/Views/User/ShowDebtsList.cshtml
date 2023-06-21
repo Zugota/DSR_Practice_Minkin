@@ -37,38 +37,57 @@
 				<th>Дата взятия займа</th>
 				<th>Дата погашения займа</th>
 				<th>Статус займа</th>
+				<th>Фактическая дата закрытия</th>
 			</tr>
 		</thead>
 		<tbody>
 			@foreach (var item in Model)
 			{
-			if ((item.DateOfEnd - DateTime.Now).TotalDays < 0)
+			if ((item.DateOfEnd - DateTime.Now).TotalDays < 0 && item.RealDateEnd == null)
 				{
-					<tr>
+					<tr onclick="Func(@item.IdDebt)">
 						<td class="bg-danger">@item.IdDebt</td>
 						<td class="bg-danger">@item.Summ рублей</td>
 						<td class="bg-danger">@item.Date</td>
 						<td class="bg-danger">@item.DateOfEnd</td>
 						<td class="bg-danger">@item.Status</td>
+						@if (item.RealDateEnd == null) {
+							<td class="bg-danger">Ещё не погашен</td>
+						}
+						else {
+							<td class="bg-danger">@item.RealDateEnd</td>
+						}
 					</tr>
 				}
-				else if ((item.DateOfEnd - DateTime.Now).TotalDays < 7 && (item.DateOfEnd - DateTime.Now).TotalDays >= 0)
+				else if ((item.DateOfEnd - DateTime.Now).TotalDays < 7 && (item.DateOfEnd - DateTime.Now).TotalDays >= 0 && item.RealDateEnd == null)
 				{
-					<tr>
+					<tr onclick="Func(@item.IdDebt)">
 						<td class="bg-warning">@item.IdDebt</td>
 						<td class="bg-warning">@item.Summ рублей</td>
 						<td class="bg-warning">@item.Date</td>
 						<td class="bg-warning">@item.DateOfEnd</td>
 						<td class="bg-warning">@item.Status</td>
+						@if (item.RealDateEnd == null) {
+							<td class="bg-warning">Ещё не погашен</td>
+						}
+						else {
+							<td class="bg-warning">@item.RealDateEnd</td>
+						}
 					</tr>
 				}
 				else {
-					<tr>
+				<tr onclick="Func(@item.IdDebt)">
 						<td>@item.IdDebt</td>
 						<td>@item.Summ рублей</td>
 						<td>@item.Date</td>
 						<td>@item.DateOfEnd</td>
 						<td>@item.Status</td>
+						@if (item.RealDateEnd == null) {
+							<td>Ещё не погашен</td>
+						}
+						else {
+							<td>@item.RealDateEnd</td>
+						}
 					</tr>
 				}
 			}
@@ -99,4 +118,20 @@
 		document.querySelectorAll('.table thead').forEach(tableTH => tableTH.addEventListener('click', () => getSort(event)));
 
 	});
+</script>
+
+<script>
+	function Func(id) {
+		$.ajax({
+			url: '',
+			data: new FormData(document.forms[0]),
+			contentType: false,
+			processData: false,
+			type: 'post'
+		}).done(function () {
+			location.href = 'DebtDetails/' + id;
+		}).fail(function () {
+			alert("error");
+		})
+	}
 </script>

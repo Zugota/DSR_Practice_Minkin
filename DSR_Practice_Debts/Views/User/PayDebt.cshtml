@@ -1,0 +1,58 @@
+﻿@model DSR_Practice_Debts.Models.Debt
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Pay";
+}
+
+<h1>Сумма займа: @Model.Summ</h1>
+<h1>Дата займа: @Model.Date</h1>
+<h1>Дата возврата заёмных средств: @Model.DateOfEnd</h1>
+@*@if (Model.Status == "Просрочен")
+{
+     <h1 class="alert-danger">Статус займа: @Model.Status</h1>
+}
+else
+{
+    <h1>Статус займа: @Model.Status</h1>
+}
+*@
+
+<form asp-action="PayDebt">
+    <div class="form-group_btn_2">
+        <input type="hidden" asp-for="IdDebt" />
+        <input type="hidden" asp-for="Summ" />
+        <input type="hidden" asp-for="Date" />
+        <input type="hidden" asp-for="DateOfEnd" />
+        <input type="hidden" asp-for="Status" />
+        <input type="hidden" asp-for="userId" />
+        <button type="submit" class="btn btn-success">Погасить</button>
+    </div>
+</form>
+
+<form asp-action="DelayDebt">
+    <div class="form-group_btn_2">
+        <input type="hidden" asp-for="IdDebt" />
+        <input type="hidden" asp-for="Summ" />
+        <input type="hidden" asp-for="Date" />
+        <input type="hidden" asp-for="Status" />
+        <input type="hidden" asp-for="userId" />
+        <label asp-for="DateOfEnd" class="control-label">Новая дата закрытия</label>
+        <input class="form-control" asp-for="DateOfEnd" asp-format="{0:yyyy-MM-ddTHH:mm}" />
+        <span asp-validation-for="DateOfEnd" class="text-danger"></span>
+        <button type="submit" class="btn btn-success">Отложить займ</button>
+    </div>
+</form>
+
+<form asp-action="ForgiveDebt">
+    <div class="form-group_btn_2">
+        <input type="hidden" asp-for="IdDebt" />
+        <input type="hidden" asp-for="Summ" />
+        <input type="hidden" asp-for="Date" />
+        <input type="hidden" asp-for="DateOfEnd" />
+        <input type="hidden" asp-for="Status" />
+        <input type="hidden" asp-for="userId" />
+        <button type="submit" class="btn btn-success">Простить займ</button>
+    </div>
+</form>
