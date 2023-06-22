@@ -36,7 +36,7 @@ namespace DSR_Practice_Debts.Controllers
                         return RedirectToAction("Index", "Admin");
                     }
                     
-                    return RedirectToAction("AddDebt", "User");
+                    return RedirectToAction("Index", "User");
                 }
                 ModelState.AddModelError("", "Некорректные логин и(или) пароль");
             }
@@ -67,7 +67,7 @@ namespace DSR_Practice_Debts.Controllers
                     return RedirectToAction("Index", "Home");
                 }
                 else
-                    ModelState.AddModelError("", "Некорректные логин и(или) пароль");
+                    ModelState.AddModelError("", "Пользователь уже существует");
             }
             return View(model);
         }

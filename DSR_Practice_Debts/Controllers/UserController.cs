@@ -47,6 +47,16 @@ namespace DSR_Practice_Debts.Controllers
         public async Task<IActionResult> ShowDebtsList()
         {
             string email = User.Identity.Name;
+            /*if (email == "admin")
+            {
+                var sqldebtsAdmin = _usersContext.Debts
+               .FromSqlRaw<Debt>("UPDATE Debts SET Status = 'Просрочен' WHERE CAST(Debts.DateOfEnd AS datetime2) < CAST(GETDATE() AS smalldatetime) AND Debts.Status NOT LIKE '%Погашен%';" +
+               " SELECT * FROM Debts;")
+               .ToList();
+
+
+                return View(sqldebtsAdmin);
+            }*/
 
             var FindidUs = await _usersContext.Users
                 .FirstOrDefaultAsync(x => x.Email == email);
@@ -99,6 +109,7 @@ namespace DSR_Practice_Debts.Controllers
         }
 
         [HttpGet]
+        [Authorize(Policy = "OnlyForUser")]
         public IActionResult AddDebt()
         {
             return View();

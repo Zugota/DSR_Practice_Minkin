@@ -26,9 +26,10 @@ builder.Services.AddAuthorization(opts => {
     opts.AddPolicy("OnlyForAdmin", policy => {
         policy.RequireClaim(ClaimTypes.Role, "Admin");
     });
-    /*opts.AddPolicy("OnlyForUser", policy => {
-        policy.RequireClaim(ClaimTypes.Role, "Пользователь");
-    });*/
+    opts.AddPolicy("OnlyForUser", policy =>
+    {
+        policy.RequireClaim(ClaimTypes.Role, "User");
+    });
 });
 
 var app = builder.Build();

@@ -27,6 +27,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Иван/Desktop/DSR_Practice_Debts/DSR_Practice_Debts/Views/Admin/SaveData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2F2ZURhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Иван/Desktop/DSR_Practice_Debts/DSR_Practice_Debts/Views/Admin/ShowDebtsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2hvd0RlYnRzTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Иван/Desktop/DSR_Practice_Debts/DSR_Practice_Debts/Views/Admin/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX0xheW91dEFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Иван/Desktop/DSR_Practice_Debts/DSR_Practice_Debts/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -55,10 +67,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWJ0RGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Desktop/DSR_Practice_Debts/DSR_Practice_Debts/Views/User/DelayDebt.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxheURlYnQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Иван/Desktop/DSR_Practice_Debts/DSR_Practice_Debts/Views/User/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -77,6 +85,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Иван/Desktop/DSR_Practice_Debts/DSR_Practice_Debts/Views/User/UserC.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyQy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Иван/Desktop/DSR_Practice_Debts/DSR_Practice_Debts/Views/User/_LayoutUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfTGF5b3V0VXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Иван/Desktop/DSR_Practice_Debts/DSR_Practice_Debts/Views/_ViewImports.cshtml]

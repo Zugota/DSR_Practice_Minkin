@@ -13,7 +13,9 @@
 @{
     ViewData["Title"] = "Admin";
 }
-
+@{
+    Layout = "_LayoutAdmin";
+}
 @foreach (var item in Model)
 {
 
@@ -21,18 +23,4 @@
     <a asp-action="Details" asp-route-id="@item.Id">Детали</a>
 }
 
-<div class="buttons">
-    <div class="form-group_btn_1">
-        <a asp-action="ExportXML">
-            <input value="Экспортировать данные" class="btn btn-success" readonly="readonly">
-        </a>
-    </div>
-</div>
 
-<div class="buttons">
-    <div class="form-group_btn_1">
-        <a asp-action="ImportXML">
-            <input value="Импортировать данные" class="btn btn-success" readonly="readonly">
-        </a>
-    </div>
-</div>

@@ -28,7 +28,8 @@
 
 <h1>Количество займов: @count</h1>
 <h1>Общая сумма займов: @summ</h1>
-<h1>Сумма займов, которую необходимо отдать на этой неделе: @summLastWeek + Долг за просроченные платежи: @summNopayedDebts</h1>
+<h1>Сумма займов, которую необходимо отдать на этой неделе: @summLastWeek</h1>
+<h1>Долг за просроченные платежи: @summNopayedDebts</h1>
 
 
 <table class="table">
@@ -36,6 +37,7 @@
 		<thead>
 			<tr>
 				<th>Id</th>
+				<th>Клиент</th>
 				<th>Сумма</th>
 				<th>Дата взятия займа</th>
 				<th>Дата погашения займа</th>
@@ -50,6 +52,7 @@
 				{
 					<tr onclick="Func(@item.IdDebt)">
 						<td class="bg-danger">@item.IdDebt</td>
+						<td class="bg-danger">@item.User.Email</td>
 						<td class="bg-danger">@item.Summ рублей</td>
 						<td class="bg-danger">@item.Date</td>
 						<td class="bg-danger">@item.DateOfEnd</td>
@@ -103,6 +106,7 @@
 		<thead>
 			<tr>
 				<th>Id</th>
+				<th>Клиент</th>
 				<th>Сумма</th>
 				<th>Дата взятия займа</th>
 				<th>Дата погашения займа</th>
@@ -133,6 +137,7 @@
 				{
 					<tr onclick="Func(@item.IdDebt)">
 						<td class="bg-warning">@item.IdDebt</td>
+						<td class="bg-warning">@item.User.Email</td>
 						<td class="bg-warning">@item.Summ рублей</td>
 						<td class="bg-warning">@item.Date</td>
 						<td class="bg-warning">@item.DateOfEnd</td>
@@ -170,6 +175,7 @@
 	<thead>
 		<tr>
 			<th>Id</th>
+			<th>Клиент</th>
 			<th>Сумма</th>
 			<th>Дата взятия займа</th>
 			<th>Дата погашения займа</th>
@@ -220,6 +226,7 @@
 			{
 				<tr onclick="Func(@item.IdDebt)">
 					<td>@item.IdDebt</td>
+					<td>@item.User.Email</td>
 					<td>@item.Summ рублей</td>
 					<td>@item.Date</td>
 					<td>@item.DateOfEnd</td>

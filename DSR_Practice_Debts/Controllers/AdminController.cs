@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Humanizer;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DSR_Practice_Debts.Controllers
 {
@@ -30,6 +31,11 @@ namespace DSR_Practice_Debts.Controllers
             return _usersContext.Users != null ?
                 View(await _usersContext.Users.ToListAsync()) :
                 Problem("Entity set 'UniversityContext.Users'  is null.");
+        }
+
+        public IActionResult SaveData()
+        {
+            return View();
         }
 
         public IActionResult Privacy()
@@ -105,9 +111,10 @@ namespace DSR_Practice_Debts.Controllers
                 var cells = row.ItemArray;
 
                 string pas = cells[2].ToString().Replace("'", "''");
-
-                _usersContext.Database.ExecuteSqlRaw($"SET IDENTITY_INSERT Users ON; INSERT INTO Users (Id, Email, Password) " +
-                    $"VALUES ({int.Parse(cells[0].ToString())}, '{(string)cells[1]}', '{pas}')");
+                pas = pas.Replace("}", "}}");
+                pas = pas.Replace("{", "{{");
+                _usersContext.Database.ExecuteSqlRaw(@$"SET IDENTITY_INSERT Users ON; INSERT INTO Users (Id, Email, Password) " +
+                    @$"VALUES ({int.Parse(cells[0].ToString())}, '{(string)cells[1]}', '{pas}')");
 
             }
 
@@ -138,7 +145,27 @@ namespace DSR_Practice_Debts.Controllers
 
             return RedirectToAction("Index");
         }
-        
+
+        [Authorize]
+        public async Task<IActionResult> ShowDebtsList()
+        {
+            //АПДЕЙТ СТАТУСА
+            var sqldebts = _usersContext.Debts
+                .FromSqlRaw<Debt>("UPDATE Debts SET Status = 'Просрочен' WHERE CAST(Debts.DateOfEnd AS datetime2) < CAST(GETDATE() AS smalldatetime) AND Debts.Status NOT LIKE '%Погашен%';" +
+                " SELECT * FROM Debts;")
+                .ToList();
+
+
+
+            int sum = sqldebts.Sum(x => x.Summ);
+
+            var join = _usersContext.Debts.Include(x => x.User).ToArray();
+
+
+
+            return View(join);
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

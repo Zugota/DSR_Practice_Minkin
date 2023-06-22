@@ -21,8 +21,8 @@ TRUNCATE TABLE Users
 DROP TABLE Debts;
 DROP TABLE Users;
 
-SET IDENTITY_INSERT Users OFF;
-INSERT INTO Users (Id, Email, Password) VALUES (3, 'te''st', '567');
+SET IDENTITY_INSERT Users ON;
+INSERT INTO Users (Id, Email, Password) VALUES (5, '5L^??$^pk8Wt}R@', '5L^??$^pk8Wt}R@');
 
 DELETE Users WHERE Id = 2
 INSERT INTO Debts VALUES (345, '2023-01-01', '2023-02-02', 'Открыт', 2, '')

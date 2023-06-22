@@ -8,6 +8,7 @@ namespace DSR_Practice_Debts.Models
     {
         [Key]
         public int IdDebt { get; set; }
+        [RegularExpression("\b[0-9]+\b", ErrorMessage = "Введите верные данные")]
         public int Summ { get; set; }
         public DateTime Date { get; set; }
 

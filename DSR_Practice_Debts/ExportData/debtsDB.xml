@@ -25,6 +25,7 @@
     <DateOfEnd>2023-07-23T04:03:00+03:00</DateOfEnd>
     <Status>Погашен</Status>
     <userId>2</userId>
+    <RealDateEnd>1900-01-01T00:00:00+03:00</RealDateEnd>
   </Debt>
   <Debt>
     <IdDebt>8</IdDebt>
@@ -42,6 +43,58 @@
     <DateOfEnd>2025-06-25T11:11:00+03:00</DateOfEnd>
     <Status>Прощён</Status>
     <userId>2</userId>
-    <RealDateEnd>2023-06-21T12:15:52.5647247+03:00</RealDateEnd>
+    <RealDateEnd>2023-06-22T13:24:46.4167333+03:00</RealDateEnd>
+  </Debt>
+  <Debt>
+    <IdDebt>10</IdDebt>
+    <Summ>765</Summ>
+    <Date>2023-05-21T04:21:00+03:00</Date>
+    <DateOfEnd>2023-06-24T04:21:00+03:00</DateOfEnd>
+    <Status>Отложен</Status>
+    <userId>2</userId>
+    <RealDateEnd>1900-01-01T00:00:00+03:00</RealDateEnd>
+  </Debt>
+  <Debt>
+    <IdDebt>11</IdDebt>
+    <Summ>1099</Summ>
+    <Date>2023-05-23T04:05:00+03:00</Date>
+    <DateOfEnd>2023-06-23T07:07:00+03:00</DateOfEnd>
+    <Status>Открыт</Status>
+    <userId>2</userId>
+    <RealDateEnd>1900-01-01T00:00:00+03:00</RealDateEnd>
+  </Debt>
+  <Debt>
+    <IdDebt>12</IdDebt>
+    <Summ>333</Summ>
+    <Date>2023-02-14T12:11:00+03:00</Date>
+    <DateOfEnd>2023-06-25T12:11:00+03:00</DateOfEnd>
+    <Status>Погашен</Status>
+    <userId>2</userId>
+    <RealDateEnd>2023-06-22T13:24:15.3375972+03:00</RealDateEnd>
+  </Debt>
+  <Debt>
+    <IdDebt>13</IdDebt>
+    <Summ>645</Summ>
+    <Date>2023-02-21T03:03:00+03:00</Date>
+    <DateOfEnd>2023-07-26T03:02:00+03:00</DateOfEnd>
+    <Status>Погашен</Status>
+    <userId>4</userId>
+    <RealDateEnd>2023-06-22T15:24:06.1312038+03:00</RealDateEnd>
+  </Debt>
+  <Debt>
+    <IdDebt>14</IdDebt>
+    <Summ>111</Summ>
+    <Date>2023-05-21T04:32:00+03:00</Date>
+    <DateOfEnd>2023-06-23T04:03:00+03:00</DateOfEnd>
+    <Status>Открыт</Status>
+    <userId>2</userId>
+  </Debt>
+  <Debt>
+    <IdDebt>15</IdDebt>
+    <Summ>113</Summ>
+    <Date>2023-06-21T03:01:00+03:00</Date>
+    <DateOfEnd>2023-06-24T04:32:00+03:00</DateOfEnd>
+    <Status>Открыт</Status>
+    <userId>4</userId>
   </Debt>
 </Debts>
