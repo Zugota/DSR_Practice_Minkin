@@ -31,7 +31,7 @@ namespace DSR_Practice_Debts.Controllers
                 if (user != null)
                 {
                     await Authenticate(user); // аутентификация
-                    if (user.Email == "admin" && user.Password == "admin")
+                    if (user.Email == "admin@admin.ru" && user.Password == "admin")
                     {
                         return RedirectToAction("Index", "Admin");
                     }
@@ -63,8 +63,12 @@ namespace DSR_Practice_Debts.Controllers
 
                     User newUser = await db.Users.FirstOrDefaultAsync(u => u.Email == model.Email);
                     await Authenticate(newUser); // аутентификация
+                    if (newUser.Email == "admin@admin.ru")
+                    {
+                        return RedirectToAction("Index", "Admin");
+                    }
 
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "User");
                 }
                 else
                     ModelState.AddModelError("", "Пользователь уже существует");
@@ -74,20 +78,12 @@ namespace DSR_Practice_Debts.Controllers
 
         private async Task Authenticate(User user)
         {
-            // создаем один claim
-            /*var claims = new List<Claim>
-            {
-
-                new Claim(ClaimsIdentity.DefaultNameClaimType, userName)
-            };
-*/
-            
-                var claims = new List<Claim> {
+            var claims = new List<Claim> {
                 new Claim(ClaimTypes.Name, user.Email),
-                new Claim(ClaimTypes.Role, user.Email == "admin" ? "Admin" : "User"),
+                new Claim(ClaimTypes.Role, user.Email == "admin@admin.ru" ? "Admin" : "User"),
                 new Claim("Id" , user.Id.ToString())
                 };
-           
+
             // создаем объект ClaimsIdentity
             ClaimsIdentity id = new ClaimsIdentity(claims, "ApplicationCookie", ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
             // установка аутентификационных куки

@@ -2,7 +2,7 @@
 <Users>
   <User>
     <Id>1</Id>
-    <Email>admin</Email>
+    <Email>admin@admin.ru</Email>
     <Password>admin</Password>
   </User>
   <User>
@@ -29,5 +29,15 @@
     <Id>6</Id>
     <Email>null@mail.ru</Email>
     <Password>null</Password>
+  </User>
+  <User>
+    <Id>7</Id>
+    <Email>petr@mail.ru</Email>
+    <Password>789</Password>
+  </User>
+  <User>
+    <Id>8</Id>
+    <Email>sidorov@gmail.com</Email>
+    <Password>111</Password>
   </User>
 </Users>

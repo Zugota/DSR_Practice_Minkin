@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DSR_Practice_Debts.Migrations
 {
     [DbContext(typeof(UsersContext))]
-    [Migration("20230621215527_InitDB")]
+    [Migration("20230623123154_InitDB")]
     partial class InitDB
     {
         /// <inheritdoc />
