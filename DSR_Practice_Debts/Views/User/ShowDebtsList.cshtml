@@ -5,6 +5,9 @@
 @{
     ViewData["Title"] = "Debts";
 }
+@{
+    Layout = "_LayoutUser";
+}
 
 
 
@@ -21,6 +24,8 @@
 	var modLastWeek = Model.Where(x => (x.DateOfEnd - DateTime.Now).TotalDays < 7 && (x.DateOfEnd - DateTime.Now).TotalDays >= 0 && x.RealDateEnd == null);
 	var NopayedDebts = Model.Where(x => (x.DateOfEnd - DateTime.Now).TotalDays < 0 && x.RealDateEnd == null);
 
+	
+
 	var summLastWeek = modLastWeek.Sum(x => x.Summ);
 	var summNopayedDebts = NopayedDebts.Sum(x => x.Summ);
 }
@@ -30,8 +35,35 @@
 <h1>Общая сумма займов: @summ</h1>
 <h1>Сумма займов, которую необходимо отдать на этой неделе: @summLastWeek + Долг за просроченные платежи: @summNopayedDebts</h1>
 
+@{
+	int c1 = 0;
+	int c2 = 0;
+	int c3 = 0;
+	@foreach (var item in Model)
+	{
+		if ((item.DateOfEnd - DateTime.Now).TotalDays < 0 && item.RealDateEnd == null) c1++;
+	}
+	@foreach (var item in Model)
+	{
+		if ((item.DateOfEnd - DateTime.Now).TotalDays < 7 && (item.DateOfEnd - DateTime.Now).TotalDays >= 0 && item.RealDateEnd == null) c2++;
+	}
+	@foreach (var item in Model)
+	{
+		if ((item.DateOfEnd - DateTime.Now).TotalDays < 0 && item.RealDateEnd == null)
+		{
 
-<table class="table">
+		}
+		else if ((item.DateOfEnd - DateTime.Now).TotalDays < 7 && (item.DateOfEnd - DateTime.Now).TotalDays >= 0 && item.RealDateEnd == null)
+		{
+
+		}
+		else c3++;
+	}
+}
+
+@if (c1 != 0)
+{
+	<table class="table">
 
 		<thead>
 			<tr>
@@ -46,7 +78,7 @@
 		<tbody>
 			@foreach (var item in Model)
 			{
-			if ((item.DateOfEnd - DateTime.Now).TotalDays < 0 && item.RealDateEnd == null)
+				if ((item.DateOfEnd - DateTime.Now).TotalDays < 0 && item.RealDateEnd == null)
 				{
 					<tr onclick="Func(@item.IdDebt)">
 						<td class="bg-danger">@item.IdDebt</td>
@@ -54,10 +86,12 @@
 						<td class="bg-danger">@item.Date</td>
 						<td class="bg-danger">@item.DateOfEnd</td>
 						<td class="bg-danger">@item.Status</td>
-						@if (item.RealDateEnd == null) {
+						@if (item.RealDateEnd == null)
+						{
 							<td class="bg-danger">Ещё не погашен</td>
 						}
-						else {
+						else
+						{
 							<td class="bg-danger">@item.RealDateEnd</td>
 						}
 					</tr>
@@ -96,9 +130,11 @@
 			}
 		</tbody>
 
-</table>
-
-<table class="table">
+	</table>
+}
+@if (c2 != 0)
+{
+	<table class="table">
 
 		<thead>
 			<tr>
@@ -113,7 +149,7 @@
 		<tbody>
 			@foreach (var item in Model)
 			{
-			@*if ((item.DateOfEnd - DateTime.Now).TotalDays < 0 && item.RealDateEnd == null)
+				@*if ((item.DateOfEnd - DateTime.Now).TotalDays < 0 && item.RealDateEnd == null)
 				{
 					<tr onclick="Func(@item.IdDebt)">
 						<td class="bg-danger">@item.IdDebt</td>
@@ -137,10 +173,12 @@
 						<td class="bg-warning">@item.Date</td>
 						<td class="bg-warning">@item.DateOfEnd</td>
 						<td class="bg-warning">@item.Status</td>
-						@if (item.RealDateEnd == null) {
+						@if (item.RealDateEnd == null)
+						{
 							<td class="bg-warning">Ещё не погашен</td>
 						}
-						else {
+						else
+						{
 							<td class="bg-warning">@item.RealDateEnd</td>
 						}
 					</tr>
@@ -163,26 +201,29 @@
 			}
 		</tbody>
 
-</table>
+	</table>
+}
 
-<table class="table">
+@if (c3 != 0)
+{
+	<table class="table">
 
-	<thead>
-		<tr>
-			<th>Id</th>
-			<th>Сумма</th>
-			<th>Дата взятия займа</th>
-			<th>Дата погашения займа</th>
-			<th>Статус займа</th>
-			<th>Фактическая дата закрытия</th>
-		</tr>
-	</thead>
-	<tbody>
-		@foreach (var item in Model)
-		{
-			if ((item.DateOfEnd - DateTime.Now).TotalDays < 0 && item.RealDateEnd == null)
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Сумма</th>
+				<th>Дата взятия займа</th>
+				<th>Дата погашения займа</th>
+				<th>Статус займа</th>
+				<th>Фактическая дата закрытия</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
 			{
-				@*<tr onclick="Func(@item.IdDebt)">
+				if ((item.DateOfEnd - DateTime.Now).TotalDays < 0 && item.RealDateEnd == null)
+				{
+					@*<tr onclick="Func(@item.IdDebt)">
 					<td class="bg-danger">@item.IdDebt</td>
 					<td class="bg-danger">@item.Summ рублей</td>
 					<td class="bg-danger">@item.Date</td>
@@ -197,10 +238,10 @@
 						<td class="bg-danger">@item.RealDateEnd</td>
 					}
 				</tr>*@
-			}
-			else if ((item.DateOfEnd - DateTime.Now).TotalDays < 7 && (item.DateOfEnd - DateTime.Now).TotalDays >= 0 && item.RealDateEnd == null)
-			{
-				@*<tr onclick="Func(@item.IdDebt)">
+				}
+				else if ((item.DateOfEnd - DateTime.Now).TotalDays < 7 && (item.DateOfEnd - DateTime.Now).TotalDays >= 0 && item.RealDateEnd == null)
+				{
+					@*<tr onclick="Func(@item.IdDebt)">
 					<td class="bg-warning">@item.IdDebt</td>
 					<td class="bg-warning">@item.Summ рублей</td>
 					<td class="bg-warning">@item.Date</td>
@@ -215,30 +256,30 @@
 						<td class="bg-warning">@item.RealDateEnd</td>
 					}
 				</tr>*@
+				}
+				else
+				{
+					<tr onclick="Func(@item.IdDebt)">
+						<td>@item.IdDebt</td>
+						<td>@item.Summ рублей</td>
+						<td>@item.Date</td>
+						<td>@item.DateOfEnd</td>
+						<td>@item.Status</td>
+						@if (item.RealDateEnd == null)
+						{
+							<td>Ещё не погашен</td>
+						}
+						else
+						{
+							<td>@item.RealDateEnd</td>
+						}
+					</tr>
+				}
 			}
-			else
-			{
-				<tr onclick="Func(@item.IdDebt)">
-					<td>@item.IdDebt</td>
-					<td>@item.Summ рублей</td>
-					<td>@item.Date</td>
-					<td>@item.DateOfEnd</td>
-					<td>@item.Status</td>
-					@if (item.RealDateEnd == null)
-					{
-						<td>Ещё не погашен</td>
-					}
-					else
-					{
-						<td>@item.RealDateEnd</td>
-					}
-				</tr>
-			}
-		}
-	</tbody>
+		</tbody>
 
-</table>
-
+	</table>
+}
 
 <script>
 	document.addEventListener('DOMContentLoaded', () => {

@@ -5,6 +5,7 @@ namespace DSR_Practice_Debts.ViewModels
     public class RegisterModel
     {
         [Required(ErrorMessage = "Не указан Email")]
+        [RegularExpression("^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$", ErrorMessage = "Проверьте правильность ввода электронной почты")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Не указан пароль")]

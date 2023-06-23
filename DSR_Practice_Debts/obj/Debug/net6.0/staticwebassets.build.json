@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AXn2eMJxYJI6UHxQZMXb7NAqYIxdkdcXyI6+sI6mzTg=",
+  "Hash": "HZfWUD7GOJUzPe6K0C2w5o17YDT/dWmvFxF+wWacTa8=",
   "Source": "DSR_Practice_Debts",
   "BasePath": "_content/DSR_Practice_Debts",
   "Mode": "Default",
@@ -51,6 +51,40 @@
       "OriginalItemSpec": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Debts\\DSR_Practice_Debts\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DSR_Practice_Debts.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Debts\\DSR_Practice_Debts\\wwwroot\\css\\details.css",
+      "SourceId": "DSR_Practice_Debts",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Debts\\DSR_Practice_Debts\\wwwroot\\",
+      "BasePath": "_content/DSR_Practice_Debts",
+      "RelativePath": "css/details.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\details.css"
+    },
+    {
+      "Identity": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Debts\\DSR_Practice_Debts\\wwwroot\\css\\login.css",
+      "SourceId": "DSR_Practice_Debts",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Debts\\DSR_Practice_Debts\\wwwroot\\",
+      "BasePath": "_content/DSR_Practice_Debts",
+      "RelativePath": "css/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login.css"
+    },
+    {
       "Identity": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Debts\\DSR_Practice_Debts\\wwwroot\\css\\site.css",
       "SourceId": "DSR_Practice_Debts",
       "SourceType": "Discovered",
@@ -83,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Debts\\DSR_Practice_Debts\\wwwroot\\images\\noimage.png",
+      "SourceId": "DSR_Practice_Debts",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Debts\\DSR_Practice_Debts\\wwwroot\\",
+      "BasePath": "_content/DSR_Practice_Debts",
+      "RelativePath": "images/noimage.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\noimage.png"
     },
     {
       "Identity": "C:\\Users\\Иван\\Desktop\\DSR_Practice_Debts\\DSR_Practice_Debts\\wwwroot\\js\\site.js",

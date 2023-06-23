@@ -6,7 +6,10 @@
     ViewData["Title"] = "Details";
 }
 @{
-    Layout = "_LayoutUser";
+    Layout = "_LayoutAdmin";
 }
 
-<h1>@Html.DisplayFor(model => model.Email)</h1>
+<h1>ID: @Html.DisplayFor(model => model.Id)</h1>
+<h1>Логин: @Html.DisplayFor(model => model.Email)</h1>
+<h1>Пароь: @Html.DisplayFor(model => model.Password)</h1>
+

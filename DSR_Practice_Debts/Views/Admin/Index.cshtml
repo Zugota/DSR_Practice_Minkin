@@ -16,10 +16,12 @@
 @{
     Layout = "_LayoutAdmin";
 }
+
+<h1>Список пользователей:</h1>
 @foreach (var item in Model)
 {
 
-    <h1>@item.Email ___ @item.Password</h1>
+    <h2>@item.Email ___ @item.Password</h2>
     <a asp-action="Details" asp-route-id="@item.Id">Детали</a>
 }
 

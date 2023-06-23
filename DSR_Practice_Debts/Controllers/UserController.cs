@@ -20,8 +20,12 @@ namespace DSR_Practice_Debts.Controllers
         public IActionResult Index()
         {
             //var user = _usersContext.Users.FirstOrDefault(x => x.Id == 1);
-            var users = _usersContext.Users;
-            return View(users.ToList());
+            string email = User.Identity.Name;
+
+            var FindidUs = _usersContext.Users
+                .FirstOrDefault(x => x.Email == email);
+            int id = FindidUs.Id;
+            return View(_usersContext.Users.FirstOrDefault(x => x.Id == id));
         }
 
         public async Task<IActionResult> Details(int? id)
@@ -69,7 +73,7 @@ namespace DSR_Practice_Debts.Controllers
             var debts = await _usersContext.Debts.FirstOrDefaultAsync(x => x.userId == id);
             if (debts == null)
             {
-                return NotFound();
+                return RedirectToAction("AddDebt");
             }
 
             
@@ -135,7 +139,7 @@ namespace DSR_Practice_Debts.Controllers
             _usersContext.Debts.Add(debt);
             await _usersContext.SaveChangesAsync();
 
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("ShowDebtsList");
 
         }
 

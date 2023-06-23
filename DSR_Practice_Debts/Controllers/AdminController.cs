@@ -33,6 +33,12 @@ namespace DSR_Practice_Debts.Controllers
                 Problem("Entity set 'UniversityContext.Users'  is null.");
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Details(int id)
+        {
+            return View(await _usersContext.Users.FirstOrDefaultAsync(x => x.Id == id));
+        }
+
         public IActionResult SaveData()
         {
             return View();
@@ -69,7 +75,7 @@ namespace DSR_Practice_Debts.Controllers
 
                 connection.Close();
             }
-            return RedirectToAction("Index");
+            return View("SaveDataFine");
         }
 
         [HttpGet]
@@ -113,8 +119,8 @@ namespace DSR_Practice_Debts.Controllers
                 string pas = cells[2].ToString().Replace("'", "''");
                 pas = pas.Replace("}", "}}");
                 pas = pas.Replace("{", "{{");
-                _usersContext.Database.ExecuteSqlRaw(@$"SET IDENTITY_INSERT Users ON; INSERT INTO Users (Id, Email, Password) " +
-                    @$"VALUES ({int.Parse(cells[0].ToString())}, '{(string)cells[1]}', '{pas}')");
+                _usersContext.Database.ExecuteSqlRaw($@"SET IDENTITY_INSERT Users ON; INSERT INTO Users (Id, Email, Password) " +
+                    $@"VALUES ({int.Parse(cells[0].ToString())}, '{(string)cells[1]}', '{pas}')");
 
             }
 

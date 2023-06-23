@@ -59,7 +59,7 @@
     <Summ>1099</Summ>
     <Date>2023-05-23T04:05:00+03:00</Date>
     <DateOfEnd>2023-06-23T07:07:00+03:00</DateOfEnd>
-    <Status>Открыт</Status>
+    <Status>Просрочен</Status>
     <userId>2</userId>
     <RealDateEnd>1900-01-01T00:00:00+03:00</RealDateEnd>
   </Debt>
@@ -86,7 +86,7 @@
     <Summ>111</Summ>
     <Date>2023-05-21T04:32:00+03:00</Date>
     <DateOfEnd>2023-06-23T04:03:00+03:00</DateOfEnd>
-    <Status>Открыт</Status>
+    <Status>Просрочен</Status>
     <userId>2</userId>
   </Debt>
   <Debt>
@@ -96,5 +96,13 @@
     <DateOfEnd>2023-06-24T04:32:00+03:00</DateOfEnd>
     <Status>Открыт</Status>
     <userId>4</userId>
+  </Debt>
+  <Debt>
+    <IdDebt>16</IdDebt>
+    <Summ>65</Summ>
+    <Date>2023-06-23T03:02:00+03:00</Date>
+    <DateOfEnd>2023-06-25T04:23:00+03:00</DateOfEnd>
+    <Status>Открыт</Status>
+    <userId>5</userId>
   </Debt>
 </Debts>

@@ -20,4 +20,14 @@
     <Email>tester@mail.ru</Email>
     <Password>5L^??$^pk8Wt}R@</Password>
   </User>
+  <User>
+    <Id>5</Id>
+    <Email>ivanovich@yandex.ru</Email>
+    <Password>777</Password>
+  </User>
+  <User>
+    <Id>6</Id>
+    <Email>null@mail.ru</Email>
+    <Password>null</Password>
+  </User>
 </Users>
