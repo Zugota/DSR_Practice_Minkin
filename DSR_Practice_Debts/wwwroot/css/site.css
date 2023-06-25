@@ -51,17 +51,6 @@ body {
         background: #F8E391;
     }
 
-    /*.table td-custom {
-        border: none;
-        padding: 10px;
-        text-align: center;
-        vertical-align: middle;
-        position: relative;
-        cursor: pointer;
-        background: #ff6e14;
-    }*/
-
-
     .table th:first-child {
         border-radius: 10px 0 0 0;
     }
@@ -86,11 +75,6 @@ td {
     padding: 10px 20px;
     background: #F8E391;
 }
-
-/*td1 {
-    padding: 10px 20px;
-    background: #ff6e14;
-}*/
 
 .custom-btn {
     width: 130px;

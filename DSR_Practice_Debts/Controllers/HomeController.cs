@@ -8,8 +8,6 @@ namespace DSR_Practice_Debts.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
         private readonly UsersContext _user;
 
         public HomeController(UsersContext user)
@@ -17,17 +15,11 @@ namespace DSR_Practice_Debts.Controllers
             _user = user;
         }
 
-
         public async Task<IActionResult> Index()
         {
             return _user.Users != null ? 
                 View(await _user.Users.ToListAsync()) :
                 Problem("Entity set 'UniversityContext.Users'  is null.");
-        }
-
-        public IActionResult Intro()
-        {
-            return View();
         }
 
         public IActionResult Privacy()
