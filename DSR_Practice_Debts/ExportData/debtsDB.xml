@@ -1,0 +1,71 @@
+<?xml version="1.0" standalone="yes"?>
+<Debts>
+  <Debt>
+    <IdDebt>1</IdDebt>
+    <Summ>777</Summ>
+    <Date>2023-06-19T12:00:00+03:00</Date>
+    <DateOfEnd>2023-06-21T11:11:00+03:00</DateOfEnd>
+    <Status>Погашен с опозданием на 4 дней</Status>
+    <userId>2</userId>
+    <RealDateEnd>2023-06-26T00:50:57.3552821+03:00</RealDateEnd>
+  </Debt>
+  <Debt>
+    <IdDebt>2</IdDebt>
+    <Summ>3700</Summ>
+    <Date>2023-05-12T12:00:00+03:00</Date>
+    <DateOfEnd>2023-06-12T12:00:00+03:00</DateOfEnd>
+    <Status>Погашен с опозданием на 13 дней</Status>
+    <userId>2</userId>
+    <RealDateEnd>2023-06-26T00:50:55.1185734+03:00</RealDateEnd>
+  </Debt>
+  <Debt>
+    <IdDebt>26</IdDebt>
+    <Summ>10000</Summ>
+    <Date>2023-06-01T12:00:00+03:00</Date>
+    <DateOfEnd>2023-07-01T12:00:00+03:00</DateOfEnd>
+    <Status>Погашен</Status>
+    <userId>7</userId>
+    <RealDateEnd>2023-06-26T01:53:53.2216067+03:00</RealDateEnd>
+  </Debt>
+  <Debt>
+    <IdDebt>28</IdDebt>
+    <Summ>56700</Summ>
+    <Date>2023-05-29T12:00:00+03:00</Date>
+    <DateOfEnd>2023-06-29T12:00:00+03:00</DateOfEnd>
+    <Status>Открыт</Status>
+    <userId>5</userId>
+  </Debt>
+  <Debt>
+    <IdDebt>29</IdDebt>
+    <Summ>150</Summ>
+    <Date>2023-06-20T01:00:00+03:00</Date>
+    <DateOfEnd>2023-06-23T12:00:00+03:00</DateOfEnd>
+    <Status>Просрочен</Status>
+    <userId>5</userId>
+  </Debt>
+  <Debt>
+    <IdDebt>30</IdDebt>
+    <Summ>9000</Summ>
+    <Date>2023-04-01T05:43:00+03:00</Date>
+    <DateOfEnd>2023-06-01T12:00:00+03:00</DateOfEnd>
+    <Status>Погашен с опозданием на 24 дней</Status>
+    <userId>8</userId>
+    <RealDateEnd>2023-06-26T02:04:00.2371441+03:00</RealDateEnd>
+  </Debt>
+  <Debt>
+    <IdDebt>31</IdDebt>
+    <Summ>1500</Summ>
+    <Date>2022-06-01T05:34:00+03:00</Date>
+    <DateOfEnd>2023-06-01T05:34:00+03:00</DateOfEnd>
+    <Status>Просрочен</Status>
+    <userId>8</userId>
+  </Debt>
+  <Debt>
+    <IdDebt>32</IdDebt>
+    <Summ>3000</Summ>
+    <Date>2022-05-23T11:00:00+03:00</Date>
+    <DateOfEnd>2023-06-27T11:11:00+03:00</DateOfEnd>
+    <Status>Отложен</Status>
+    <userId>9</userId>
+  </Debt>
+</Debts>

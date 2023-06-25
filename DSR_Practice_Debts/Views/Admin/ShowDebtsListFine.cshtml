@@ -1,0 +1,225 @@
+﻿@model IEnumerable<DSR_Practice_Debts.Models.Debt>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Debts";
+}
+@{
+    Layout = "_LayoutAdmin";
+}
+
+@{
+	int summ = Model.Sum(x => x.Summ);
+	int count = Model.Count();
+}
+
+@{
+	var modLastWeek = Model.Where(x => (x.DateOfEnd - DateTime.Now).TotalDays < 7 && (x.DateOfEnd - DateTime.Now).TotalDays >= 0 && x.RealDateEnd == null);
+	var NopayedDebts = Model.Where(x => (x.DateOfEnd - DateTime.Now).TotalDays < 0 && x.RealDateEnd == null);
+
+	var summLastWeek = modLastWeek.Sum(x => x.Summ);
+	var summNopayedDebts = NopayedDebts.Sum(x => x.Summ);
+}
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://getbootstrap.su/docs/5.2/assets/css/docs.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="p-3 m-0 border-0 bd-example bg-light">
+
+	<div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+		<div class="toast-header">
+			<svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#2f0"></rect></svg>
+			<strong class="me-auto text-success">Запись успешно удалена!</strong>
+			<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+		</div>
+	</div>
+</body>
+
+<head>
+	<meta charset="utf-8" />
+	<title>@ViewBag.Title</title>
+	<link href="@Url.Content("~/css/site.css")" rel="stylesheet" type="text/css" />
+</head>
+
+
+<h1>Количество займов: @count</h1>
+<h1>Общая сумма займов: @summ</h1>
+<h1>Сумма займов, которую должникам необходимо отдать на этой неделе: @summLastWeek</h1>
+<h1>Долг за просроченные платежи: @summNopayedDebts</h1>
+
+
+<table class="table">
+
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Клиент</th>
+				<th>Сумма</th>
+				<th>Дата взятия займа</th>
+				<th>Дата погашения займа</th>
+				<th>Статус займа</th>
+				<th>Фактическая дата закрытия</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+			if ((item.DateOfEnd - DateTime.Now).TotalDays < 0 && item.RealDateEnd == null)
+				{
+					<tr onclick="Func(@item.IdDebt)">
+						<td class="bg-danger">@item.IdDebt</td>
+						<td class="bg-danger">@item.User.Email</td>
+						<td class="bg-danger">@item.Summ рублей</td>
+						<td class="bg-danger">@item.Date</td>
+						<td class="bg-danger">@item.DateOfEnd</td>
+						<td class="bg-danger">@item.Status</td>
+						@if (item.RealDateEnd == null) {
+							<td class="bg-danger">Ещё не погашен</td>
+						}
+						else {
+							<td class="bg-danger">@item.RealDateEnd</td>
+						}
+					</tr>
+				}
+			}
+		</tbody>
+
+</table>
+
+<table class="table">
+
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Клиент</th>
+				<th>Сумма</th>
+				<th>Дата взятия займа</th>
+				<th>Дата погашения займа</th>
+				<th>Статус займа</th>
+				<th>Фактическая дата закрытия</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				if ((item.DateOfEnd - DateTime.Now).TotalDays < 7 && (item.DateOfEnd - DateTime.Now).TotalDays >= 0 && item.RealDateEnd == null)
+				{
+					<tr onclick="Func(@item.IdDebt)">
+						<td class="bg-warning">@item.IdDebt</td>
+						<td class="bg-warning">@item.User.Email</td>
+						<td class="bg-warning">@item.Summ рублей</td>
+						<td class="bg-warning">@item.Date</td>
+						<td class="bg-warning">@item.DateOfEnd</td>
+						<td class="bg-warning">@item.Status</td>
+						@if (item.RealDateEnd == null) {
+							<td class="bg-warning">Ещё не погашен</td>
+						}
+						else {
+							<td class="bg-warning">@item.RealDateEnd</td>
+						}
+					</tr>
+				}
+			}
+		</tbody>
+
+</table>
+
+<table class="table">
+
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Клиент</th>
+			<th>Сумма</th>
+			<th>Дата взятия займа</th>
+			<th>Дата погашения займа</th>
+			<th>Статус займа</th>
+			<th>Фактическая дата закрытия</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			if ((item.DateOfEnd - DateTime.Now).TotalDays < 0 && item.RealDateEnd == null)
+			{
+
+			}
+			else if ((item.DateOfEnd - DateTime.Now).TotalDays < 7 && (item.DateOfEnd - DateTime.Now).TotalDays >= 0 && item.RealDateEnd == null)
+			{
+
+			}
+			else
+			{
+				<tr onclick="Func(@item.IdDebt)">
+					<td>@item.IdDebt</td>
+					<td>@item.User.Email</td>
+					<td>@item.Summ рублей</td>
+					<td>@item.Date</td>
+					<td>@item.DateOfEnd</td>
+					<td>@item.Status</td>
+					@if (item.RealDateEnd == null)
+					{
+						<td>Ещё не погашен</td>
+					}
+					else
+					{
+						<td>@item.RealDateEnd</td>
+					}
+				</tr>
+			}
+		}
+	</tbody>
+
+</table>
+
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+
+		const getSort = ({ target }) => {
+			const order = (target.dataset.order = -(target.dataset.order || -1));
+			const index = [...target.parentNode.cells].indexOf(target);
+			const collator = new Intl.Collator(['en', 'ru'], { numeric: true });
+			const comparator = (index, order) => (a, b) => order * collator.compare(
+				a.children[index].innerHTML,
+				b.children[index].innerHTML
+			);
+
+			for (const tBody of target.closest('table').tBodies)
+				tBody.append(...[...tBody.rows].sort(comparator(index, order)));
+
+			for (const cell of target.parentNode.cells)
+				cell.classList.toggle('sorted', cell === target);
+		};
+
+		document.querySelectorAll('.table thead').forEach(tableTH => tableTH.addEventListener('click', () => getSort(event)));
+
+	});
+</script>
+
+<script>
+	function Func(id) {
+		$.ajax({
+			url: '',
+			data: new FormData(document.forms[0]),
+			contentType: false,
+			processData: false,
+			type: 'post'
+		}).done(function () {
+			location.href = 'DebtDetails/' + id;
+		}).fail(function () {
+			alert("error");
+		})
+	}
+</script>
+
+<script>
+	function myFunction() {
+		alert("Запись успешно удалена!");
+	}
+</script>

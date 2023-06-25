@@ -1,0 +1,1 @@
+Data Source=DESKTOP-JVIUT9K\SQLEXPRESS;Initial Catalog=DSR_Practice_Debts;Integrated Security=True;TrustServerCertificate=true

@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Data";
+}
+@{
+    Layout = "_LayoutAdmin";
+}
+
+
+<div class="buttons">
+    <div class="form-group_btn_1">
+        <a asp-action="ExportXML">
+            <input value="Экспортировать данные" class="btn btn-success" readonly="readonly">
+        </a>
+    </div>
+</div>
+
+<div class="buttons">
+    <div class="form-group_btn_1">
+        <a asp-controller="Admin" asp-action="ImportData">
+            <input value="Импортировать данные" class="btn btn-success" readonly="readonly">
+        </a>
+    </div>
+</div>

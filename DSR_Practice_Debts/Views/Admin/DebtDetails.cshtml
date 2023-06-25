@@ -1,0 +1,31 @@
+﻿@model DSR_Practice_Debts.Models.Debt
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Details";
+}
+@{
+    Layout = "_LayoutAdmin";
+}
+
+<h1>Сумма займа: @Model.Summ</h1>
+<h1>Дата займа: @Model.Date</h1>
+<h1>Дата возврата заёмных средств: @Model.DateOfEnd</h1>
+@if (Model.Status == "Просрочен") { <h1 class="alert-danger">Статус займа: @Model.Status</h1> }
+else
+{
+     <h1>Статус займа: @Model.Status</h1>
+}
+
+<form asp-action="DeleteDebt">
+    <div class="form-group_btn_2">
+        <input type="hidden" asp-for="IdDebt" />
+        <input type="hidden" asp-for="Summ" />
+        <input type="hidden" asp-for="Date" />
+        <input type="hidden" asp-for="DateOfEnd" />
+        <input type="hidden" asp-for="Status" />
+        <input type="hidden" asp-for="userId" />
+        <button type="submit" class="btn btn-success">Удалить запись займа</button>
+    </div>
+</form>
